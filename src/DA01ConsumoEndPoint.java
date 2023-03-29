@@ -11,7 +11,8 @@ public class DA01ConsumoEndPoint {
         // Realizar uma conexão HTTP e buscar os top 250 filmes mais populares
         // String url = "https://imdb-api.com/en/API/MostPopularMovies/k_vqv5snhq";
        //  Realizar uma conexão HTTP e buscar os top 250 séries
-         String url = "https://imdb-api.com/en/API/Top250TVs/k_vqv5snhq";
+         String imdbKey = System.getenv("IMDB_API_KEY");
+         String url = "https://imdb-api.com/en/API/Top250TVs/" + imdbKey;
 
         URI endereco = URI.create(url);
         var client = HttpClient.newHttpClient();

@@ -35,8 +35,8 @@ public class App {
 //        for (Map<String, String> filme : listaDeFilmes) {
         for (int i = 0; i < 10; i++) {
             Map<String, String> filme = listaDeFilmes.get(i);
-            System.out.println("\uD83C\uDFAC \u001b[1m\u001b[37m\u001b[43mTitle:\u001b[m " + filme.get("title"));
-            System.out.println("\uD83C\uDF9E️ \u001b[1m\u001b[44mImage URL:\u001b[m\u001b[m" + " " + filme.get("image"));
+            System.out.println("\uD83C\uDFAC\u001b[1m\u001b[37m\u001b[43mTitle:\u001b[m " + filme.get("title"));
+            System.out.println("\uD83C\uDF9E\u001b[1m\u001b[44mImage URL:\u001b[m\u001b[m" + " " + filme.get("image"));
             double classificacao = Double.parseDouble(filme.get("imDbRating"));
             int numeroEstrelinhas = (int) classificacao;
             for (int n = 1; n <= numeroEstrelinhas; n++) {
