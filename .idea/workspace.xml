@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54a0f7f0-7f78-4770-a25b-fb5360cb0041" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/GeradoraDeFigurinhas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DA01ConsumoEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DA01ConsumoEndPoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/vgerace/Workspaces/Alura/imersaojava2022",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last.edited.regexp&quot;: &quot;https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX128_CR0,12,128,176_AL_.jpg&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vgerace/Workspaces/Alura/imersaojava2022&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
@@ -72,13 +74,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GeradoraDeFigurinhas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GeradoraDeFigurinhas" />
+      <module name="alura-stickers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.GeradoraDeFigurinhas" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.DA01ConsumoEndPoint" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.GeradoraDeFigurinhas" />
         <item itemvalue="Application.DA01ConsumoEndPoint" />
       </list>
     </recent_temporary>
@@ -92,11 +103,26 @@
       <option name="presentableId" value="Default" />
       <updated>1679962231938</updated>
       <workItem from="1679962233283" duration="13447000" />
-      <workItem from="1680052678536" duration="4518000" />
+      <workItem from="1680052678536" duration="5022000" />
+      <workItem from="1680095048399" duration="235000" />
+      <workItem from="1680130767529" duration="55000" />
+      <workItem from="1680130834695" duration="22049000" />
+      <workItem from="1680154441627" duration="3673000" />
+      <workItem from="1680219867447" duration="7661000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="new File(&quot;../entrada/filme.jpg&quot;)" />
+      </configuration>
+      <inline-watch fileUrl="jar://$USER_HOME$/.sdkman/candidates/java/11.0.13-zulu/lib/src.zip!/java.desktop/javax/imageio/ImageIO.java" line="1306">
+        <watch expression="input" />
+      </inline-watch>
+    </watches-manager>
   </component>
 </project>
