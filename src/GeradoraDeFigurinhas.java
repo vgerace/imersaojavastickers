@@ -13,7 +13,8 @@ import java.net.URL;
 
 public class GeradoraDeFigurinhas {
 
-    public void cria(InputStream inputStream, String nomeArquivo, String texto, InputStream inputStreamSobreposicao) throws Exception {
+   // public void cria(InputStream inputStream, String nomeArquivo, String texto, InputStream inputStreamSobreposicao) throws Exception {
+   public void cria(InputStream inputStream, String nomeArquivo, String texto) throws Exception {
 
         // Realizar a leitura da imagem: por arquivo (File), por InputStream ou por URL
         // InputStream inputStream = new FileInputStream(new File("/home/vgerace/Workspaces/Alura/imersaojava2023/alura-stickers/imagens/entrada/filme-maior.jpg"));
@@ -31,9 +32,9 @@ public class GeradoraDeFigurinhas {
         // Copiar a imagem original para nova imagem (em memória)
         Graphics2D graphics = (Graphics2D) novaImagem.getGraphics();
         graphics.drawImage(imagemOriginal, 0, 0, null);
-        BufferedImage imagemSobreposicao = ImageIO.read(inputStreamSobreposicao);
-        int posicaoImagemSobreposicaoY = novaAltura - imagemSobreposicao.getHeight();
-        graphics.drawImage(imagemSobreposicao, 0, posicaoImagemSobreposicaoY, null);
+//        BufferedImage imagemSobreposicao = ImageIO.read(inputStreamSobreposicao);
+//        int posicaoImagemSobreposicaoY = novaAltura - imagemSobreposicao.getHeight();
+//        graphics.drawImage(imagemSobreposicao, 0, posicaoImagemSobreposicaoY, null);
 
         // Configurar a fonte
 

@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54a0f7f0-7f78-4770-a25b-fb5360cb0041" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GeradoraDeFigurinhas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/API.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClienteHttp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClienteHttpException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Conteudo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExtratorDeConteudo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExtratorDeConteudoImdb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExtratorDeConteudoNasa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figurinhas/John Wick: Chapter 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figurinhas/Scream VI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figurinhas/Shazam! Fury of the Gods.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figurinhas/The Whale.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GeradoraDeFigurinhas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeradoraDeFigurinhas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -50,14 +64,17 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="IMDB_API_KEY" value="k_vqv5snhq" />
-      </envs>
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="alura-stickers" />
-      <option name="PROGRAM_PARAMETERS" value="-Dsome_option=${IMDB_API_KEY}" />
       <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
         <option name="credential" />
         <option name="region" />
@@ -108,12 +125,23 @@
       <workItem from="1680130767529" duration="55000" />
       <workItem from="1680130834695" duration="22049000" />
       <workItem from="1680154441627" duration="3673000" />
-      <workItem from="1680219867447" duration="7661000" />
+      <workItem from="1680219867447" duration="22861000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

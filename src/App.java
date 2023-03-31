@@ -1,85 +1,46 @@
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.net.URI;
 import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
 import java.util.Map;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        // Realizar uma conexão HTTP e buscar os top 250 filmes
-        // Buscar na variável de ambiente a API Key
-        String imdbKey = System.getenv("IMDB_API_KEY");
-        // String url = "https://imdb-api.com/en/API/Top250Movies/" + imdbKey;
-        String url = "https://imdb-api.com/en/API/MostPopularMovies/" + imdbKey;
-        URI endereco = URI.create(url);
-        var client = HttpClient.newHttpClient();
-        var request = HttpRequest.newBuilder(endereco).GET().build();
-        HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-        String body = response.body();
+        // Realizar uma conexão HTTP e buscar o conteúdo
 
-        // Extrair só os dados que interessam (título, imagem, classificação)
 
-        var parser = new JsonParser();
-        List<Map<String, String>> listaDeFilmes = parser.parse(body);
-//  O size retorna o tamanho da lista
-//  System.out.println(listaDeFilmes.size());
-//  O get(0) retorna o primeiro elemento do índice
-//  System.out.println(listaDeFilmes.get(0));
+        API api = API.IMDB_TOP_SERIES;
 
-        var diretorio = new File("figurinhas/");
+        String url = api.getUrl();
+        ExtratorDeConteudo extrator = api.getExtrator();
+
+
+        var http = new ClienteHttp();
+        String json = http.buscaDados(url);
+
+        // Cria diretório de saída caso não exista
+        var diretorio = new File("saida/");
         diretorio.mkdir();
 
+
+        // Exibir e manipular os dados
+        List<Conteudo> conteudos = extrator.extraiConteudos(json);
+
         var geradora = new GeradoraDeFigurinhas();
-        for (int index = 0; index < 5; index++) {
-            var filme = listaDeFilmes.get(index);
+
+        for (int i = 0; i < 3; i++) {
+            String texto = "XD";
+            Conteudo conteudo = conteudos.get(i);
+
+            InputStream inputStream = new URL(conteudo.urlImagem()).openStream();
+            String nomeArquivo = "saida/" + conteudo.titulo() + ".png";
+
+            geradora.cria(inputStream, nomeArquivo, texto);
+
+            System.out.println(conteudo.titulo());
+            System.out.println();
 
 
-            // Exibir a manipulação dos dados
-            // Exibir apenas 10 - for (int i = 0; i < 10; i++) {Map<String, String> filme = listaDeFilmes.get(i);}
-            // for (Map<String, String> filme : listaDeFilmes) {
-            String urlImagem = filme.get("image");
-            String urlImagemMaior = urlImagem.replaceFirst("(@?\\.)([0-9A-Z,_]+).jpg$", "$1.jpg");
-            String titulo = filme.get("title");
-            double classificacao = Double.parseDouble(filme.get("imDbRating"));
-
-            String textoFigurinha;
-            InputStream imagemVitor;
-
-            if (classificacao >= 8.0) {
-                textoFigurinha = "TOPD+";
-                imagemVitor = new FileInputStream(new File("/home/vgerace/Workspaces/Alura/imersaojava2023/alura-stickers/sobreposicao/VitorTop.jpeg"));
-            } else {
-                textoFigurinha = "HMMMMM...";
-                imagemVitor = new FileInputStream(new File("/home/vgerace/Workspaces/Alura/imersaojava2023/alura-stickers/sobreposicao/VitorBad.jpeg"));
-            }
-
-
-            InputStream inputStream = new URL(urlImagemMaior).openStream();
-            String nomeArquivo = "figurinhas/" + titulo + ".png";
-
-            geradora.cria(inputStream, nomeArquivo, textoFigurinha, imagemVitor);
-
-            System.out.println("\uD83C\uDFAC\u001b[1m \u001b[30m\u001b[43mTitle:\u001b[m" + " " + titulo);
-            System.out.println("\uD83C\uDF9E\u001b[1m \u001b[44mImage URL:\u001b[m\u001b[m" + " " + urlImagem);
-            System.out.println("\uD83D\uDCCF\u001b[1m \u001b[45mClassificação:\u001b[m\u001b[m" + " " + classificacao);
-            int numeroEstrelinhas = (int) classificacao;
-            for (int n = 1; n <= numeroEstrelinhas; n++) {
-                if (numeroEstrelinhas > 9)
-                    System.out.print("✴️");
-                else if (numeroEstrelinhas > 7) {
-                    System.out.print("\uD83C\uDF1F");
-                } else {
-                    System.out.print("\uD83D\uDC4E\uD83C\uDFFF");
-                }
-            }
-            System.out.println("\n");
         }
     }
 }
