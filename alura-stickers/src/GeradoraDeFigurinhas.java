@@ -69,6 +69,6 @@ public class GeradoraDeFigurinhas {
 
 
         // Escrever a nova imagem em um arquivo
-        ImageIO.write(novaImagem, "png", new File("/home/vgerace/Workspaces/Alura/imersaojava2023/alura-stickers/" + nomeArquivo));
+        ImageIO.write(novaImagem, "png", new File("/home/vgerace/Workspaces/Alura/imersaojava2023/alura-stickers/alura-stickers/" + nomeArquivo));
     }
 }
