@@ -103,13 +103,11 @@ API disponível em: https://imersaojavastickers-production.up.railway.app/lingua
 
 ![image](https://user-images.githubusercontent.com/26327049/229342859-a5039e84-2b89-4110-b882-eca5e1618756.png)
 
-Imagem Dcoker disponível em: https://hub.docker.com/r/geracevitor/linguagensapi/
+Imagem Docker disponível em: https://hub.docker.com/r/geracevitor/linguagensapi/
 
-Swagger Ui - Index.html
+Swagger Ui
 
 ![image](https://user-images.githubusercontent.com/26327049/229374908-2e27a23a-5928-45eb-8826-139c41b88cdb.png)
-
-
 
 
 <h2>⚙️ Tecnologias</h2><a name = "tecnologias"></a>
@@ -124,5 +122,5 @@ Swagger Ui - Index.html
 </ul>
 
 <h2>👏🏾 Agradecimento</h2><a name = "agradecimento"></a>
-<p> Quero registrar meu agradecimento a todos envolvidos da equipe Alura e sua comunidade, que impulsionaram e colaboraram para a realização desse projeto. Em especial também ao meu colega e amigo @Durval Printes, por sempre se dispor a colaborar em dúvidas, compartilhar conhecimento e incentivar a nos tornarmos profissionais/devs melhores!</p>
+<p> Quero registrar meu agradecimento a todos envolvidos da equipe Alura e sua comunidade, que impulsionaram e colaboraram para a realização desse projeto. Em especial também ao meu colega e amigo @durvalprintes, por sempre se dispor a colaborar em dúvidas, compartilhar conhecimento e incentivar a nos tornarmos profissionais/devs melhores!</p>
 
