@@ -103,7 +103,13 @@ API disponível em: https://imersaojavastickers-production.up.railway.app/lingua
 
 ![image](https://user-images.githubusercontent.com/26327049/229342859-a5039e84-2b89-4110-b882-eca5e1618756.png)
 
+Imagem Dcoker disponível em: https://hub.docker.com/r/geracevitor/linguagensapi/
+
+Swagger Ui - Index.html
+
 ![image](https://user-images.githubusercontent.com/26327049/229374908-2e27a23a-5928-45eb-8826-139c41b88cdb.png)
+
+
 
 
 <h2>⚙️ Tecnologias</h2><a name = "tecnologias"></a>
