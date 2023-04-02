@@ -96,11 +96,15 @@ $ Execute a classe APP
 <h2> [Aula 5] - Destaque </h2><a name = "aula5"></a>
 
 - [x] Deploy
-- [x] Adicionalmente,foi criado dockerfile e imagem docker
+- [x] Adicionalmente, foi criado dockerfile e imagem docker
 - [x] Adicionalmente, foi implementado o Swagger para documentação da API
 
-![image](https://user-images.githubusercontent.com/26327049/229342859-a5039e84-2b89-4110-b882-eca5e1618756.png)
 API disponível em: https://imersaojavastickers-production.up.railway.app/linguagens
+
+![image](https://user-images.githubusercontent.com/26327049/229342859-a5039e84-2b89-4110-b882-eca5e1618756.png)
+
+![image](https://user-images.githubusercontent.com/26327049/229374908-2e27a23a-5928-45eb-8826-139c41b88cdb.png)
+
 
 <h2>⚙️ Tecnologias</h2><a name = "tecnologias"></a>
 <ul>
