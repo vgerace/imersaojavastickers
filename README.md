@@ -50,7 +50,7 @@ $ java -jar linguagens.api-0.0.1-SNAPSHOT.jar
 $ cd alura-stickers/src
 
 # Escolha na classe App a API que prefira (disponíveis da NASA e IMDB)
-# Ajuste a key com as variáveis de ambiente (
+# Ajuste a key com as variáveis de ambiente de acordo com sua IDE/OS, no exemplo: (nasaApiKey, imdbApiKey...)
 $ Execute a classe APP
 
 ```
@@ -96,11 +96,11 @@ $ Execute a classe APP
 <h2> [Aula 5] - Destaque </h2><a name = "aula5"></a>
 
 - [x] Deploy
-- [x] Criado dockerfile e imagem docker
+- [x] Adicionalmente,foi criado dockerfile e imagem docker
+- [x] Adicionalmente, foi implementado o Swagger para documentação da API
 
 ![image](https://user-images.githubusercontent.com/26327049/229342859-a5039e84-2b89-4110-b882-eca5e1618756.png)
-
-
+API disponível em: https://imersaojavastickers-production.up.railway.app/linguagens
 
 <h2>⚙️ Tecnologias</h2><a name = "tecnologias"></a>
 <ul>
@@ -110,8 +110,9 @@ $ Execute a classe APP
 <li>[Docker] (https://www.docker.com/)</li>
 <li>[Railway] (https://railway.app/)</li>
 <li>[Mongo Db Atlas] (https://www.mongodb.com/cloud/atlas/register)</li>
+<li>[Swagger] (https://swagger.io/)</li>
 </ul>
 
 <h2>👏🏾 Agradecimento</h2><a name = "agradecimento"></a>
-<p> Quero registrar meu agradecimento a todos envolvidos da Alura que impulsionaram e colaboraram para a realização desse projeto.</p>
+<p> Quero registrar meu agradecimento a todos envolvidos da equipe Alura e sua comunidade, que impulsionaram e colaboraram para a realização desse projeto. Em especial também ao meu colega e amigo @Durval Printes, por sempre se dispor a colaborar em dúvidas, compartilhar conhecimento e incentivar a nos tornarmos profissionais/devs melhores!</p>
 
